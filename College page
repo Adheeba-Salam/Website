@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College of Engineering Perumon</title>
+</head>
+<body>
+
+  <center>
+    <h1>College of Engineering Perumon</h1>
+    <h3>Affiliated to APJ Abdul Kalam Technological University</h3>
+
+  
+    <img src="logo.png" alt="College Logo" width="150">
+  </center>
+
+  <hr>
+
+  <h2>Navigation</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Departments</a></li>
+    <li><a href="#">Admissions</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <hr>
+
+  <h2>Welcome to College of Engineering Perumon</h2>
+  <p>
+    College of Engineering Perumon is a government-controlled engineering college established in 2000 under the Co-operative Academy of Professional Education (CAPE), affiliated to APJ Abdul Kalam Technological University and approved by AICTE. The college is known for its commitment to quality education and student excellence.
+  </p>
+
+  <h3>Departments:</h3>
+  <ul>
+    <li>Computer Science and Engineering (CSE)</li>
+    <li>Electronics and Communication Engineering (ECE)</li>
+    <li>Electrical and Electronics Engineering (EEE)</li>
+    <li>Mechanical Engineering (ME)</li>
+  </ul>
+
+  <h3>Contact Information:</h3>
+  <p>
+    Address: College of Engineering Perumon, Perinad P.O, Kollam, Kerala - 691601<br>
+    Phone: +91-474-2550500<br>
+    Email: principal@perumonec.ac.in<br>
+    Website: <a href="http://www.perumonec.ac.in" target="_blank">www.perumonec.ac.in</a>
+  </p>
+
+  <hr>
+  <center>&copy; 2025 College of Engineering Perumon. All rights reserved.</center>
+
+</body>
+</html>
