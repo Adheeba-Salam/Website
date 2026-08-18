@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College of Engineering Perumon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      transition: background-color 0.3s ease;
+    }
+
+    h1, h3, h2 {
+      text-align: center;
+    }
+
+    img.logo {
+      display: block;
+      margin: 10px auto;
+      width: 120px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 0;
+    }
+
+    nav a, nav button {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .principal-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .principal-section img {
+      width: 180px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .contact-form input, .contact-form textarea,
+    .student-form input, .student-form select {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    .contact-form button, .student-form button {
+      padding: 10px 20px;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    #studentRegistrationForm {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>College of Engineering Perumon</h1>
+    <h3>Affiliated to APJ Abdul Kalam Technological University</h3>
+    <img src="cep.jpg" alt="College Logo" class="logo" style="width:100%;height:auto">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Departments</a></li>
+      <li><a href="#">Admissions</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><button onclick="showRegistration()">Register</button></li>
+    </ul>
+  </nav>
+
+  <div class="section">
+    <h2>Welcome to the College of Engineering Perumon</h2>
+    <p>
+      College of Engineering Perumon is a government-controlled engineering college established in 2000 under the Co-operative Academy of Professional Education (CAPE). It is affiliated to APJ Abdul Kalam Technological University and approved by AICTE. The college is known for its commitment to quality education, technical innovation, and student success.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Departments</h2>
+    <ul>
+      <li>Computer Science and Engineering (CSE)</li>
+      <li>Electronics and Communication Engineering (ECE)</li>
+      <li>Electrical and Electronics Engineering (EEE)</li>
+      <li>Mechanical Engineering (ME)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Principal's Message</h2>
+    <div class="principal-section">
+      <img src="Principal_cep.jpeg" alt="Principal Photo">
+      <div>
+        <p>
+          Welcome to the College of Engineering Perumon. Our institution is committed to fostering an environment of academic excellence, innovation, and integrity. We aim to equip our students with the skills and knowledge necessary to meet global challenges and contribute meaningfully to society.
+        </p>
+        <p>
+          We believe in holistic development through a blend of academics, research, and co-curricular activities. Let us together create a vibrant, inclusive, and forward-thinking educational space.
+        </p>
+        <p><strong>– Dr. Ananda Resmi, Principal</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Contact Us</h2>
+    <p>
+      <strong>Address:</strong><br>
+      College of Engineering Perumon,<br>
+      Perinad P.O, Kollam, Kerala - 691601<br>
+      <strong>Phone:</strong> +91-474-2550500<br>
+      <strong>Email:</strong> principal@perumonec.ac.in<br>
+      <strong>Website:</strong> <a href="http://www.perumonec.ac.in" target="_blank">www.perumonec.ac.in</a>
+    </p>
+
+    <form class="contact-form" id="contactForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="response"></div>
+  </div>
+
+  <!-- ✅ STUDENT REGISTRATION FORM -->
+  <div class="section" id="studentRegistrationForm">
+    <h2>Student Registration</h2>
+    <form class="student-form">
+      <label for="studentName">Name:</label>
+      <input type="text" id="studentName" name="studentName" required>
+
+      <label for="roll">Roll Number:</label>
+      <input type="text" id="roll" name="roll" required>
+
+      <label for="dept">Department:</label>
+      <select id="dept" name="dept" required>
+        <option value="">--Select Department--</option>
+        <option value="CSE">Computer Science and Engineering</option>
+        <option value="ECE">Electronics and Communication Engineering</option>
+        <option value="EEE">Electrical and Electronics Engineering</option>
+        <option value="ME">Mechanical Engineering</option>
+      </select>
+
+      <label for="emailReg">Email:</label>
+      <input type="email" id="emailReg" name="emailReg" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 College of Engineering Perumon. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const message = document.getElementById("message").value;
+      document.getElementById("response").innerText =
+        `Thank you, ${name}. Your message has been received: "${message}"`;
+      this.reset();
+    });
+
+    function showRegistration() {
+      document.body.style.backgroundColor = "#e6f2ff"; // light blue
+      document.getElementById("studentRegistrationForm").style.display = "block";
+      document.getElementById("studentRegistrationForm").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
